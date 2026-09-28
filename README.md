@@ -1,120 +1,140 @@
 # 📱 Mobile Systems Conference Deadlines (2027)
 Submission and peer-review timelines for major conferences in mobile and related systems.
 
-> ⚠️ **All 2027-cycle dates below are estimates.** Official CFPs for this cycle are not out yet, so each date is projected from the most recent known cycle (same calendar slot, same review duration). Always confirm against the official CFP before you plan a submission.
+> ⚠️ **Read this first.** As of the validation date below, official CFPs for the 2027 cycle are almost all unreleased. Every **🔶 Projected** date is an estimate anchored to that venue's most recent confirmed edition — treat it as a planning hint, **not** an official deadline. The **✅ Confirmed** rows are IMWUT/UbiComp's standing rolling-journal schedule, which recurs every year. **Est. Notification** is derived from each venue's typical historical review length and is an estimate in all cases. Always confirm against the official CFP before you plan a submission.
 
-- `*` : Estimated schedule (CFP not released yet) — applies to every entry this year
-- Duration: submission → final notification
-- Superscript numbers (¹ ²) denote multiple submission rounds
-- Last updated: 2026-09-28
+- ✅ **Confirmed** = officially announced or a standing recurring schedule
+- 🔶 **Projected** = not yet announced; estimated from the most recent edition
+- Review (days) = typical span from submission to final notification
+- Rounds: `R1`, `R2` denote a venue's separate submission cycles
+- **Validated:** 2026-09-28 · **Sources:** [ccfddl/ccf-deadlines](https://github.com/ccfddl/ccf-deadlines) + official CFP pages
+- Coverage: 30 submission windows across 6 tracks (3 confirmed, 27 projected)
 
 ```mermaid
 %%{init: {'theme': 'neutral',
-'themeVariables': {
-      'fontSize': '18px'},
+'themeVariables': {'fontSize': '13px'},
 "gantt": {
-      "fontSize": 16,
-      "sectionFontSize": 18,
-      "leftPadding": 150,
+      "fontSize": 11,
+      "sectionFontSize": 12,
+      "leftPadding": 105,
+      "rightPadding": 25,
       "displayMode": "compact",
-      "barHeight": 30,
-      "barGap": 5
+      "barHeight": 16,
+      "barGap": 3,
+      "topPadding": 38,
+      "gridLineStartPadding": 28
   }}}%%
 gantt
     dateFormat  YYYY-MM-DD
+    axisFormat  %b %Y
     tickInterval 1month
-    title Submission & Review Deadlines (2027, estimated)
+    title Submission → estimated notification (2027 cycle)
 
     section Mobile & Embedded
-    MobiCom '27²* :mobicom27-r2, 2027-03-13, 101d
-    MobiCom '28¹* :mobicom28-r1, 2027-09-02, 78d
-    MobiSys '28* :mobisys28, 2027-12-05, 87d
-    SenSys '28¹* :sensys28-r1, 2027-06-05, 87d
-    SenSys '28²* :sensys28-r2, 2027-11-14, 76d
-    PerCom '28* :percom28, 2027-09-11, 98d
-    MobiHoc '27* :mobihoc27, 2027-04-20, 125d
-    EMSOFT '27* :emsoft27, 2027-03-30, 109d
-    RTAS '28* :rtas28, 2027-11-13, 77d
+    MobiCom '27 R2* :mobicom27r2, 2027-03-12, 101d
+    MobiCom '28 R1* :mobicom28r1, 2027-09-01, 78d
+    MobiSys '28* :mobisys28, 2027-12-03, 87d
+    SenSys '28 R1* :sensys28r1, 2027-06-04, 87d
+    SenSys '28 R2* :sensys28r2, 2027-11-04, 76d
+    PerCom '28* :percom28, 2027-09-17, 98d
+    MobiHoc '27* :mobihoc27, 2027-04-19, 125d
+    EMSOFT '27* :emsoft27, 2027-03-29, 109d
+    RTAS '28* :rtas28, 2027-11-05, 77d
 
-    section Ubiquitous Computing (IMWUT/UbiComp — quarterly)
-    UbiComp '27 Q1* :ubicomp27-q1, 2027-02-01, 61d
-    UbiComp '27 Q2* :ubicomp27-q2, 2027-05-01, 61d
-    UbiComp '27 Q3* :ubicomp27-q3, 2027-08-01, 61d
-    UbiComp '27 Q4* :ubicomp27-q4, 2027-11-01, 61d
+    section Ubiquitous Computing — IMWUT / UbiComp (rolling journal)
+    IMWUT '27 (Feb) :active, imwut27a, 2027-02-01, 61d
+    IMWUT '27 (May) :active, imwut27b, 2027-05-01, 61d
+    IMWUT '27 (Nov) :active, imwut27d, 2027-11-01, 61d
 
     section Operating Systems & Architecture
-    SOSP '27* :sosp27, 2027-04-01, 93d
-    OSDI '28* :osdi28, 2027-12-08, 98d
-    ASPLOS '28¹* :asplos28-r1, 2027-04-15, 103d
-    ASPLOS '28²* :asplos28-r2, 2027-09-09, 103d
-    EuroSys '28¹* :eurosys28-r1, 2027-05-14, 99d
-    EuroSys '28²* :eurosys28-r2, 2027-09-24, 127d
-    ATC '27* :atc27, 2027-06-10, 100d
+    SOSP '27* :sosp27, 2027-04-02, 93d
+    OSDI '28* :osdi28, 2027-12-07, 98d
+    ASPLOS '28 R1* :asplos28r1, 2027-04-15, 103d
+    ASPLOS '28 R2* :asplos28r2, 2027-09-09, 103d
+    EuroSys '28 R1* :eurosys28r1, 2027-05-13, 99d
+    EuroSys '28 R2* :eurosys28r2, 2027-09-23, 127d
+    ATC '27* :atc27, 2027-01-12, 100d
 
     section Networking / Distributed Systems
-    SIGCOMM '27* :sigcomm27, 2027-02-06, 94d
-    NSDI '28¹* :nsdi28-r1, 2027-04-23, 91d
-    NSDI '28²* :nsdi28-r2, 2027-09-17, 82d
+    SIGCOMM '27* :sigcomm27, 2027-02-05, 94d
+    NSDI '28 R1* :nsdi28r1, 2027-04-22, 91d
+    NSDI '28 R2* :nsdi28r2, 2027-09-16, 82d
     INFOCOM '28* :infocom28, 2027-07-31, 130d
-    CoNEXT '27²* :conext27-r2, 2027-06-05, 98d
-    CoNEXT '28¹* :conext28-r1, 2027-12-12, 109d
-    ICDCS '28* :icdcs28, 2028-01-21, 96d
+    CoNEXT '27 R2* :conext27r2, 2027-06-04, 98d
+    CoNEXT '28 R1* :conext28r1, 2027-12-10, 109d
+    ICDCS '28* :icdcs28, 2028-01-15, 96d
 
     section Electronic Design Automation (EDA)
-    DAC '28* :dac28, 2027-11-19, 110d
-    DATE '28* :date28, 2027-09-20, 64d
-    ICCAD '27* :iccad27, 2027-04-21, 71d
+    DAC '28* :dac28, 2027-11-17, 110d
+    DATE '28* :date28, 2027-09-19, 64d
+    ICCAD '27* :iccad27, 2027-04-13, 71d
 
     section Multimedia
-    MM '27* :mm27, 2027-04-11, 84d
+    ACM MM '27* :mm27, 2027-04-09, 84d
 ```
 
+### 📋 CFP Reference Table
 
+_Sorted by submission date. The same data drives the chart above._
 
-### CFP Reference Table
+| Conference | Submission | Est. Notification | Review (days) | Status | Source |
+|------------|------------|-------------------|:-------------:|:------:|--------|
+| ATC '27 <sup>[1]</sup> | 2027-01-12 | 2027-04-22 | 100 | 🔶 Projected | [link](https://sigops.org/s/conferences/atc/2026/cfp.html) |
+| IMWUT '27 (Feb) <sup>[2]</sup> | 2027-02-01 | 2027-04-03 | 61 | ✅ Confirmed | [link](https://www.ubicomp.org/) |
+| SIGCOMM '27 | 2027-02-05 | 2027-05-10 | 94 | 🔶 Projected | [link](https://conferences.sigcomm.org/sigcomm/2027/) |
+| MobiCom '27 R2 | 2027-03-12 | 2027-06-21 | 101 | 🔶 Projected | [link](https://www.sigmobile.org/mobicom/) |
+| EMSOFT '27 | 2027-03-29 | 2027-07-16 | 109 | 🔶 Projected | [link](https://esweek.org/emsoft/) |
+| SOSP '27 | 2027-04-02 | 2027-07-04 | 93 | 🔶 Projected | [link](https://sigops.org/s/conferences/sosp/) |
+| ACM MM '27 <sup>[3]</sup> | 2027-04-09 | 2027-07-02 | 84 | 🔶 Projected | [link](https://www.acmmm.org/) |
+| ICCAD '27 | 2027-04-13 | 2027-06-23 | 71 | 🔶 Projected | [link](https://iccad.com/) |
+| ASPLOS '28 R1 | 2027-04-15 | 2027-07-27 | 103 | 🔶 Projected | [link](https://www.asplos-conference.org/asplos2027/cfp/) |
+| MobiHoc '27 | 2027-04-19 | 2027-08-22 | 125 | 🔶 Projected | [link](https://www.sigmobile.org/mobihoc/) |
+| NSDI '28 R1 | 2027-04-22 | 2027-07-22 | 91 | 🔶 Projected | [link](https://www.usenix.org/conference/nsdi27/call-for-papers) |
+| IMWUT '27 (May) | 2027-05-01 | 2027-07-01 | 61 | ✅ Confirmed | [link](https://www.ubicomp.org/) |
+| EuroSys '28 R1 | 2027-05-13 | 2027-08-20 | 99 | 🔶 Projected | [link](https://2027.eurosys.org/) |
+| SenSys '28 R1 | 2027-06-04 | 2027-08-30 | 87 | 🔶 Projected | [link](https://sensys.acm.org/) |
+| CoNEXT '27 R2 | 2027-06-04 | 2027-09-10 | 98 | 🔶 Projected | [link](https://conferences.sigcomm.org/co-next/2026/) |
+| INFOCOM '28 <sup>[4]</sup> | 2027-07-31 | 2027-12-08 | 130 | 🔶 Projected | [link](https://ccfddl.com/) |
+| MobiCom '28 R1 | 2027-09-01 | 2027-11-18 | 78 | 🔶 Projected | [link](https://www.sigmobile.org/mobicom/) |
+| ASPLOS '28 R2 | 2027-09-09 | 2027-12-21 | 103 | 🔶 Projected | [link](https://www.asplos-conference.org/asplos2027/cfp/) |
+| NSDI '28 R2 | 2027-09-16 | 2027-12-07 | 82 | 🔶 Projected | [link](https://www.usenix.org/conference/nsdi27/call-for-papers) |
+| PerCom '28 | 2027-09-17 | 2027-12-24 | 98 | 🔶 Projected | [link](https://percom.org/) |
+| DATE '28 | 2027-09-19 | 2027-11-22 | 64 | 🔶 Projected | [link](https://www.date-conference.com/) |
+| EuroSys '28 R2 | 2027-09-23 | 2028-01-28 | 127 | 🔶 Projected | [link](https://2027.eurosys.org/) |
+| IMWUT '27 (Nov) | 2027-11-01 | 2028-01-01 | 61 | ✅ Confirmed | [link](https://www.ubicomp.org/) |
+| SenSys '28 R2 | 2027-11-04 | 2028-01-19 | 76 | 🔶 Projected | [link](https://sensys.acm.org/) |
+| RTAS '28 | 2027-11-05 | 2028-01-21 | 77 | 🔶 Projected | [link](https://2027.rtas.org/) |
+| DAC '28 | 2027-11-17 | 2028-03-06 | 110 | 🔶 Projected | [link](https://www.dac.com/) |
+| MobiSys '28 | 2027-12-03 | 2028-02-28 | 87 | 🔶 Projected | [link](https://www.sigmobile.org/mobisys/) |
+| OSDI '28 | 2027-12-07 | 2028-03-14 | 98 | 🔶 Projected | [link](https://www.usenix.org/conference/osdi27/call-for-papers) |
+| CoNEXT '28 R1 | 2027-12-10 | 2028-03-28 | 109 | 🔶 Projected | [link](https://conferences.sigcomm.org/co-next/2026/) |
+| ICDCS '28 <sup>[5]</sup> | 2028-01-15 | 2028-04-20 | 96 | 🔶 Projected | [link](https://ccfddl.com/) |
 
-| Conference | Submission | Final Notification (est.) | Review Days | CFP Link |
-|------------|------------|---------------------------|:-----------:|----------|
-| UbiComp '27 Q1\* | 2027-02-01 | 2027-04-03 | 61 | https://www.ubicomp.org/ |
-| SIGCOMM '27\* | 2027-02-06 | 2027-05-11 | 94 | https://conferences.sigcomm.org/sigcomm/2027/ |
-| MobiCom '27²\* | 2027-03-13 | 2027-06-22 | 101 | https://www.sigmobile.org/mobicom/2027/ |
-| EMSOFT '27\* | 2027-03-30 | 2027-07-17 | 109 | https://esweek.org/emsoft_cfp/ |
-| SOSP '27\* | 2027-04-01 | 2027-07-03 | 93 | https://sigops.org/s/conferences/sosp/2027/ |
-| MM '27\* | 2027-04-11 | 2027-07-04 | 84 | https://www.acmmm.org/2027/ |
-| ASPLOS '28¹\* | 2027-04-15 | 2027-07-27 | 103 | https://www.asplos-conference.org/asplos2028/ |
-| MobiHoc '27\* | 2027-04-20 | 2027-08-23 | 125 | https://www.sigmobile.org/mobihoc/2027/ |
-| ICCAD '27\* | 2027-04-21 | 2027-07-01 | 71 | https://iccad.com/ |
-| NSDI '28¹\* | 2027-04-23 | 2027-07-23 | 91 | https://www.usenix.org/conference/nsdi28/ |
-| UbiComp '27 Q2\* | 2027-05-01 | 2027-07-01 | 61 | https://www.ubicomp.org/ |
-| EuroSys '28¹\* | 2027-05-14 | 2027-08-21 | 99 | https://2028.eurosys.org/ |
-| SenSys '28¹\* | 2027-06-05 | 2027-08-31 | 87 | https://sensys.acm.org/2028/ |
-| CoNEXT '27²\* | 2027-06-05 | 2027-09-11 | 98 | https://conferences.sigcomm.org/co-next/2027/ |
-| ATC '27\* | 2027-06-10 | 2027-09-18 | 100 | https://www.usenix.org/conference/atc27/ |
-| INFOCOM '28\* | 2027-07-31 | 2027-12-08 | 130 | https://infocom2028.ieee-infocom.org/ |
-| UbiComp '27 Q3\* | 2027-08-01 | 2027-10-01 | 61 | https://www.ubicomp.org/ |
-| MobiCom '28¹\* | 2027-09-02 | 2027-11-19 | 78 | https://www.sigmobile.org/mobicom/2028/ |
-| ASPLOS '28²\* | 2027-09-09 | 2027-12-21 | 103 | https://www.asplos-conference.org/asplos2028/ |
-| PerCom '28\* | 2027-09-11 | 2027-12-18 | 98 | https://percom.org/call-for-papers/ |
-| NSDI '28²\* | 2027-09-17 | 2027-12-08 | 82 | https://www.usenix.org/conference/nsdi28/ |
-| DATE '28\* | 2027-09-20 | 2027-11-23 | 64 | https://www.date-conference.com/ |
-| EuroSys '28²\* | 2027-09-24 | 2028-01-29 | 127 | https://2028.eurosys.org/ |
-| UbiComp '27 Q4\* | 2027-11-01 | 2028-01-01 | 61 | https://www.ubicomp.org/ |
-| RTAS '28\* | 2027-11-13 | 2028-01-29 | 77 | https://2028.rtas.org/ |
-| SenSys '28²\* | 2027-11-14 | 2028-01-29 | 76 | https://sensys.acm.org/2028/ |
-| DAC '28\* | 2027-11-19 | 2028-03-08 | 110 | https://www.dac.com/ |
-| MobiSys '28\* | 2027-12-05 | 2028-03-01 | 87 | https://www.sigmobile.org/mobisys/2028/ |
-| OSDI '28\* | 2027-12-08 | 2028-03-15 | 98 | https://www.usenix.org/conference/osdi28/ |
-| CoNEXT '28¹\* | 2027-12-12 | 2028-03-30 | 109 | https://conferences.sigcomm.org/co-next/2028/ |
-| ICDCS '28\* | 2028-01-21 | 2028-04-26 | 96 | https://icdcs.org/ |
+**Notes**
 
+1. **ATC '27** — USENIX ATC ended in 2025; now the **ACM SIGOPS Annual Technical Conference**, which resumes its historical January deadline / July conference. Low confidence — venue in transition.
+2. **IMWUT '27** — IMWUT is a rolling journal: new-submission deadlines recur every year on Feb 1, May 1 and Nov 1 (Aug 1 is major-revision resubmissions only).
+3. **ACM MM '27** — Higher variance — ACM MM's deadline has ranged late-March to late-April across recent editions; 2027 host not yet confirmed.
+4. **INFOCOM '28** — Highest-confidence projection — INFOCOM's abstract/paper deadline has been Jul 24 / Jul 31 every year 2022–2027.
+5. **ICDCS '28** — Lowest-confidence projection — ICDCS drifts between early December and late January year to year.
+
+### How the dates were validated
+Each submission date was checked on 2026-09-28 against the community-maintained
+[ccfddl/ccf-deadlines](https://github.com/ccfddl/ccf-deadlines) dataset and,
+where a page existed, the official conference CFP. Because the 2027-cycle CFPs
+are almost all unreleased, projected dates shift the most recent confirmed
+edition forward by one cycle (same calendar slot, same review length). No
+official date was invented; unreleased notification dates are shown as
+estimates. **Re-validate before relying on any date here.**
 
 ### Previous Editions
 * [2026 edition](README-2026.md)
 * [2025 edition](README-2025.md)
 
-### My Go-To Top CS Conference Lists
+### Top CS Conference References
 * [CSRankings](https://csrankings.org/)
+* [CCF Deadlines (ccfddl)](https://ccfddl.com/)
 * [Institutional Guidelines in South Korea (KIISE/NRF BK21+/Universities)](https://gist.github.com/Pusnow/6eb933355b5cb8d31ef1abcb3c3e1206)
 
 ---
-*Inspired by [iamseonghoon/Mobile-Systems-Conference-Deadlines](https://github.com/iamseonghoon/Mobile-Systems-Conference-Deadlines).*
+*Format inspired by [iamseonghoon/Mobile-Systems-Conference-Deadlines](https://github.com/iamseonghoon/Mobile-Systems-Conference-Deadlines).*
